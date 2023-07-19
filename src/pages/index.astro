@@ -11,28 +11,29 @@
 
   <body class="background">
     <header>
-      <nav class="font-mono flex justify-around font-extrabold text-3xl">
+      <div>
+        <nav class="font-mono flex justify-around font-extrabold text-3xl">
         <a id="Welcome" class="text-zinc-300 hover:text-zinc-500" href="#"
           >Welcome</a
         >
         <a class="text-zinc-300 hover:text-zinc-500" href="#">About Me</a>
         <a class="text-zinc-300 hover:text-zinc-500" href="#">Contact</a>
       </nav>
+      </div>
+      
     </header>
 
     <main>
-      <section id="Welcome">
-        <div class="text-6xl align-middle font-extrabold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center h-1/2 w-1/2">
-          <div class="hover:text-cyan-700 inline-block">
+        <div class=" text-6xl font-extrabold justify-between text-white text-center">
+          <div class="hover:text-cyan-700">
             <h1 class="m-0 p-0">Hi all. I am:</h1>
             <h1 class="m-0 p-0">Lucas Gomez</h1>
           </div>
         </div>
-      </section>
+
       <!-- centrar texto
 		 -->
-      <section class="" id="About-Me"><!------.About Me--- -->
-        <div class="about-me text-center  flex-col">
+        <div class="about-me text-center flex-col">
         <p class="text-zinc-400 justify-end flex align-bottom">
            * About me *
           Hello there! I'm Lucas Gomez, a Junior Fullstack Developer with a strong desire to kickstart my professional journey in the world of software development. As an aspiring developer, I'm actively seeking my first opportunity to contribute my skills and creativity to a dynamic and forward-thinking team.
@@ -40,8 +41,19 @@
           */
         </p>
       </div>
-      </section>
-    </main>
+      
+</main>
+      <section id="Contact">
+        <div class="contact text-center  ">
+          <h1 class="text-6xl text-yellow-500 font-extralight font-serif ">Contact</h1>
+          <div class="flex justify-around">
+            <a class="text-black bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded-full m-5 "href="">Contact</a>
+
+          </div>
+        </section>   
+
+  
+    
   </body>
 </html>
 <style is:global>
