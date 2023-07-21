@@ -8,10 +8,12 @@
     <meta name="generator" />
     <title>Lucas Gomez</title>
   </head>
-  import github-logo from '../images/github-logo.png';
+ 
   <body>
+   
     <header>
       <nav class="font-mono font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
+        
         <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">About Me</a>
         <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">Projects</a>
         <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">Contact</a>
@@ -21,13 +23,13 @@
     <div class="w-[5rem] h-[50%] bg-stone-700 rounded-r-xl top-16 left-0 fixed p-[0.2rem]">
       <!-- side nav -->
       <a href="https://github.com/Vguetz/">
-        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src="/src/images/github-logo.png" alt="GitHub Logo">
+        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src='public/github-logo.png' alt="GitHub Logo">
       </a>
       <a href="https://www.linkedin.com/in/lucas-g%C3%B3mez-b279aa1b6/">
-        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src="/src/images/linkedin-logo.png" alt="LinkedIn Logo">
+        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src="public/linkedin-logo.png" alt="LinkedIn Logo">
       </a>
       <a href="https://app.netlify.com/teams/gomezlucas712/overview">
-        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src="/src/images/pngwing.com.png" alt="Netlify Logo">
+        <img class="w-10 m-5 block mb-[130px] invert justify-between transform scale-100 hover:scale-110" src="public/pngwing.com.png" alt="Netlify Logo">
       </a>
     </div><!-- side nav -->
     
@@ -55,6 +57,10 @@
     </section>   
     
   </body>
+  <script>
+    // Import the github-logo.png image using the relative path to the image from the current file
+    import githubLogo from 'src/images/github-logo.png';
+  </script>
 </html>
 <style is:global>
   body {
