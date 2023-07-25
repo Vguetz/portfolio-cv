@@ -15,15 +15,15 @@
   <body>
    
     <header>
-      <nav class="bg-white  uppercase shadow-2xl font- font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
+      <nav class="bg-white  uppercase shadow-2xl font-sans font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
         
         <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#about">About Me</a>
         <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#projects">Projects</a>
-        <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">Contact</a>
+        <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="/#contact">Contact</a>
       </nav>
     </header>
     
-    <div class="w-[4.2rem] h-[50%] bg-white shadow-2xl rounded-r-xl top-16 left-0 fixed p-[0.2rem]">
+    <div id="navbar" class="w-[4.2rem] h-[50%] bg-white shadow-2xl rounded-r-xl top-16 left-0 fixed p-[0.2rem]">
       <!-- side nav -->
       <a href="https://github.com/Vguetz/">
         <img class="w-10 m-3 block mb-[120px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all justify-between transform scale-100 hover:scale-[1.25]" src='../github-logo.png' alt="GitHub Logo">
@@ -36,7 +36,7 @@
       </a>
     </div><!-- side nav -->
     
-    <main class="h-[60rem]"><!-- main -->
+    <main class="astro-section h-[60rem]"><!-- main -->
       <div class="text-6xl uppercase font-bold justify-between text-black text-center">
         <h1 class="hover:text-cyan-700 p-0 w-auto inline-block m-10">Lucas Gomez</h1>
       </div>
@@ -47,24 +47,30 @@
         </p>
       </div>
       <div class="projects text-center">
-        <a class="text-white uppercase text-3xl bg-purple-700 hover:bg-blue-900 font-extrabold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-[1.25] duration-200 py-4 px-6 rounded-2xl m-5">Projects</a>
+        
+        <a href="/#projects" class="text-white uppercase text-3xl bg-purple-700 hover:bg-blue-900 font-extrabold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-[1.25] duration-200 py-4 px-6 rounded-2xl m-5">Projects</a>
       </div>
     </main><!-- main -->
     
     <div class="h-[60rem]">
     <section id="about">
       <h1 class="uppercase text-6xl  mb-auto text-center">About Me</h1><!--  about -->
-      <img class="rounded-full tablet:items-stretch shadow-gray-950 shadow-2xl items-center justify-center ml-[5rem] w-[70%] tablet:w-[20%] tablet:ml-[70rem]  " src="../lucas_icon.jpg" alt="">
-      <p class="tablet:text-3xl tablet:items-stretch text-xl text-zinc-700 text-left mt-10 font-light tablet:my-[-15rem] w-[50%] ml-[5rem]  animate-flip-down animate-once animate-duration-[1000ms] animate-delay-[1000ms] animate-ease-out">
+      <div class="tablet:grid tablet:grid-col-2 tablet:gap-2 flex flex-col ">
+      <div class="tablet:col-start-3 tablet:row-start-1 tablet:m-10  mr-0 justify-center" >
+      <img class="rounded-full shadow-gray-950 shadow-2xl min-w-[15rem] w-[50%] tablet:w-[40%] m-auto
+         " src="../lucas_icon.jpg" alt="">
+      </div>
+      <div class="ml-3 tablet:ml-5 tablet:col-start-1 tablet:row-span-1 justify-center">
+      <p class="tablet:text-3xl text-xl text-zinc-700  font-light mt-[7rem]  animate-flip-down animate-once animate-duration-[1000ms] animate-delay-[1000ms] animate-ease-out">
         Hello there! I'm Lucas Gomez, a Junior Fullstack Developer with a strong desire to kickstart my professional journey in the world of software development. As an aspiring developer, I'm actively seeking my first opportunity to contribute my skills and creativity to a dynamic and forward-thinking team.
       </p>
-      
+      </div>
+    </div>
     </section>
     </div> 
     
-      
-<div class="container h-[60rem] my-24 mx-auto tablet:px-6">
-  <!-- Section: Design Block -->
+<div class="bg-white">      
+<div class="container astro-section my-24 mx-auto tablet:px-6 ">
   <section id="projects" class="mb-32 text-center lg:text-left">
     <h2 class="uppercase mb-12 text-center text-3xl font-bold">
       Projects I've worked on
@@ -80,14 +86,14 @@
           </a>
         </div>
         <h5 class="mb-4 text-lg font-bold">Cosquin Rock Fan Page</h5>
-        <div class="mb-4 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 lg:justify-start">
+        <div class="mb-4 flex items-center justify-center font-bold text-danger dark:text-danger-500 lg:justify-start">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
           </svg>
           Different
         </div>
-        <p class="text-neutral-500 dark:text-neutral-300">
+        <p class="text-neutral-900">
           Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat
           vulputate. Ut vulputate est non quam dignissim elementum. Donec a
           ullamcorper diam.
@@ -104,13 +110,13 @@
         </div>
 
         <h5 class="mb-4 text-lg font-bold">Bienes Raices</h5>
-        <div class="mb-4 flex items-center justify-center text-sm font-medium text-primary dark:text-primary-400 lg:justify-start">
+        <div class="mb-4 flex items-center justify-center font-bold text-primary dark:text-primary-400 lg:justify-start">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
           </svg>
           Fulllstack
         </div>
-        <p class="text-neutral-500 dark:text-neutral-300">
+        <p class="text-neutral-900">
           Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet diam
           orci, nec ornare metus semper sed. Integer volutpat ornare erat
           sit amet rutrum.
@@ -127,13 +133,13 @@
         </div>
 
         <h5 class="mb-4 text-lg font-bold">Blog De Cafe</h5>
-        <div class="mb-4 flex items-center justify-center text-sm font-medium text-warning lg:justify-start">
+        <div class="mb-4 flex items-center justify-center font-bold text-warning lg:justify-start">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
       
           </svg>
           Minimalist
         </div>
-        <p class="text-neutral-500 dark:text-neutral-300">
+        <p class=" text-neutral-900">
           Curabitur tristique, mi a mollis sagittis, metus felis mattis
           arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa
           volutpat feugiat. Donec.
@@ -141,16 +147,46 @@
       </div>
     </div>
   </section>
-  <!-- Section: Design Block -->
+</div>
 </div>
 
+<section id="contact" class="tablet:m-[14rem] mb-4 astro-section ">
+  <div class="py-8 lg:py-16 px-4 mx-4 ">
+      <h2 class="mb-4 text-6xl tracking-tight font-extrabold text-center uppercase font-sans text-gray-500">Contact</h2>
+      <p class="mb-8 lg:mb-16 font-bold text-center text-gray-900  sm:text-xl">Let's Work Together!</p>
+      <form action="#" class="space-y-8">
+          <div>
+              <label for="email" class="block mb-2 font-bold text-gray-900 ">Your email</label>
+              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="mail@email.com" required>
+          </div>
+          <div>
+              <label for="subject" class="block mb-2 font-bold text-gray-900 ">Subject</label>
+              <input type="text" id="subject" class="block p-3 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let me know how can i help you" required>
+          </div>
+          <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 font-bold text-gray-900">Your message</label>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+          </div>
+          <button type="submit" class="py-3 px-5 font-bold text-center text-white hover:bg-blue-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-[1.1] duration-200 rounded-lg bg-gray-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+      </form>
+  </div>
+</section>
      
+ <div> <!--footer -->
+  <footer>
+    <div class="bg-white mt-2 uppercase shadow-2xl font- font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
+      
+      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#about">About Me</a>
+      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#projects">Projects</a>
+      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">Contact</a>
+    </div>
+
     
+  </footer>
+
+</div>   
   </body>
-  <script>
-    // Import the github-logo.png image using the relative path to the image from the current file
-    import githubLogo from 'src/images/github-logo.png';
-  </script>
+  <script src="../app.js"></script>
 </html>
 <style is:global>
   body {
