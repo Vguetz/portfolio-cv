@@ -11,61 +11,74 @@
     <meta name="viewport" content="width=device-width">
     <meta name="generator">
     <title>Lucas Gomez</title>
-  <link rel="stylesheet" href="/_astro/index.69ab350a.css" /><script type="module">window.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("sidebar"),t=document.querySelector("main"),o=document.getElementById("about"),s=()=>{window.scrollY>t.offsetTop+t.offsetHeight?(e.classList.add("translate-x-[-100%]"),e.classList.add("transition-transform")):e.classList.remove("translate-x-[-100%]")};window.addEventListener("scroll",s);const r=a=>{const[n]=a;n.isIntersecting&&n.boundingClientRect.bottom>=0&&e.classList.add("translate-x-[-100%]")};new IntersectionObserver(r,{root:null,rootMargin:"0px",threshold:0}).observe(o)});
+  <link rel="stylesheet" href="/_astro/index.3baec10d.css" /><script type="module">window.addEventListener("DOMContentLoaded",()=>{const s=document.getElementById("sidebar");document.querySelector("main");const t=()=>{const e=window.scrollY>700;s.classList.toggle("translate-x-[-100%]",e),s.classList.add("transition-transform",e)};window.addEventListener("scroll",t)});window.addEventListener("scroll",function(){const s=document.querySelector("header"),t=window.scrollY>175,e=document.querySelector("body");screen.width<768?t?(s.classList.add("sticky"),s.classList.add("w-[100%]"),s.classList.add("left-0"),s.classList.add("top-0"),s.classList.add("overflow-hidden"),s.classList.add("z-10"),e.classList.add("pt-[175px]")):(s.classList.remove("sticky"),s.classList.remove("w-[100%]"),s.classList.remove("left-0"),s.classList.remove("top-0"),s.classList.remove("overflow-hidden"),s.classList.remove("z-10"),e.classList.remove("pt-[175px]")):(s.classList.remove("sticky"),s.classList.remove("w-[100%]"),s.classList.remove("left-0"),s.classList.remove("top-0"),s.classList.remove("overflow-hidden"),e.classList.remove("pt-[175px]"),e.classList.remove("z-10"))});
 </script></head>
  
   <body>
    
     <header>
-      <nav class="bg-white  uppercase shadow-2xl font-sans font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
+      <div class="bg-white uppercase shadow-2xl font-sans font-extrabold text-3xl  ">
+      <nav class=" flex flex-col tablet:flex-row tablet: justify-center align-middle text-center tablet:justify-end  tablet:p-10 ">
         
-        <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#about">About Me</a>
-        <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#projects">Projects</a>
-        <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="/#contact">Contact</a>
+        <a class="text-zinc-500 hover:text-zinc-900 tablet:m-4" href="./#about">About Me</a>
+        <a class="text-zinc-500 hover:text-zinc-900 tablet:m-4" href="./#projects">Projects</a>
+        <a class="text-zinc-500 hover:text-zinc-900 tablet:m-4" href="/#contact">Contact</a>
+        <div class="tablet:hidden flex flex-row align-middle justify-center transition ease-in-out delay-150">
+        <a target="_blank" rel="noopener" href="https://github.com/Vguetz/">
+          <img class="w-10 m-3 block mb-[15px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all  transform scale-100 hover:scale-[1.25]" src="../github-logo.png" alt="GitHub Logo">
+        </a>
+        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/lucas-g%C3%B3mez-b279aa1b6/">
+          <img class="w-10 m-3 block mb-[15px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all transform scale-100 hover:scale-[1.25]" src="../linkedin-logo.png" alt="LinkedIn Logo">
+        </a>
+        <a target="_blank" rel="noopener" href="https://app.netlify.com/teams/gomezlucas712/overview">
+          <img class="w-10 m-3 block mb-[15px] transition duration-300 ease-in-out hover:bg-zinc-100 transform scale-100 hover:scale-[1.3]" src="../pngwing.com.png" alt="Netlify Logo">
+        </a>
+      </div>
       </nav>
+    </div>
     </header>
     
-    <div id="sidebar" class="w-[4.2rem] h-[50%] bg-white shadow-2xl rounded-r-xl top-16 left-0 fixed p-[0.2rem]">
+    <div id="sidebar" class="w-[4.2rem]  invisible tablet:visible  bg-white shadow-2xl rounded-r-xl top-4 tablet:top-[10rem] fixed p-[0.2rem]">
       <!-- side nav -->
+      
       <a target="_blank" rel="noopener" href="https://github.com/Vguetz/">
-        <img class="w-10 m-3 block mb-[120px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all justify-between transform scale-100 hover:scale-[1.25]" src="../github-logo.png" alt="GitHub Logo">
+        <img class="w-10 m-3 block mb-[120px] transition duration-300 ease-in-out  hover:bg-zinc-100  hover:transition-all transform scale-100 hover:scale-[1.25]" src="../github-logo.png" alt="GitHub Logo">
       </a>
       <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/lucas-g%C3%B3mez-b279aa1b6/">
-        <img class="w-10 m-3 block mb-[130px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all justify-between transform scale-100 hover:scale-[1.25]" src="../linkedin-logo.png" alt="LinkedIn Logo">
+        <img class="w-10 m-3 block mb-[130px] transition duration-300 ease-in-out hover:bg-zinc-100  hover:transition-all transform scale-100 hover:scale-[1.25]" src="../linkedin-logo.png" alt="LinkedIn Logo">
       </a>
       <a target="_blank" rel="noopener" href="https://app.netlify.com/teams/gomezlucas712/overview">
-        <img class="w-10 m-3 block mb-[130px] transition duration-300 ease-in-out hover:bg-zinc-100 justify-between transform scale-100 hover:scale-[1.3]" src="../pngwing.com.png" alt="Netlify Logo">
+        <img class="w-10 m-3 block transition duration-300 ease-in-out hover:bg-zinc-100 transform scale-100 hover:scale-[1.3]" src="../pngwing.com.png" alt="Netlify Logo">
       </a>
     </div><!-- side nav -->
     
     <main class="welcome astro-section h-[60rem]"><!-- main -->
-      <div class="text-6xl font-extrabold uppercase justify-between text-black text-center">
-        <h1 class="hover:text-cyan-700 p-0  w-auto inline-block m-10">Hey, I'm Lucas Gomez</h1>
+      <div class="text-6xl font-extrabold uppercase text-black text-center">
+        <h1 class="hover:text-cyan-700 p-0  w-auto inline-block m-10 text-center ">Hey, I'm Lucas Gomez</h1>
       </div>
       <div class="about-me text-3xl text-center flex-col">
-        <p class="text-zinc-700 font-light justify-center flex w-[50%] m-auto my-10 animate-flip-down animate-once animate-duration-[1000ms] animate-delay-[1000ms] animate-ease-out">
-          A Fullstack interested in learning
-           new technologies every day
+        <p class="text-zinc-700 text-center font-light justify-center m-0 flex tablet:m-10 my-10 mb-10 animate-flip-down animate-once animate-duration-[1000ms] animate-delay-[1000ms] animate-ease-out">
+          A Fullstack interested in learning new technologies every day
         </p>
       </div>
       <div class="projects text-center">
         
-        <a href="/#projects" class="text-white uppercase text-3xl bg-purple-700 hover:bg-blue-900 font-extrabold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-[1.25] duration-200 py-4 px-6 rounded-2xl m-5">Projects</a>
+        <a href="/#projects" class="text-white uppercase text-3xl my-10 bg-purple-700 m-auto hover:bg-blue-900 font-extrabold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-[1.25] duration-200 py-4 px-6 rounded-2xl ">Projects</a>
       </div>
     </main><!-- main -->
     
-    <div class="h-[60rem]">
+    <div class="h-[60rem] mt-5">
     <section id="about">
       <h1 class="uppercase text-6xl  mb-auto text-center">About Me</h1><!--  about -->
       <div class="tablet:grid tablet:grid-col-2 tablet:gap-2 flex flex-col ">
       <div class="tablet:col-start-3 tablet:row-start-1 tablet:m-10  mr-0 justify-center">
-      <img class="rounded-full shadow-gray-950 shadow-2xl min-w-[15rem] w-[50%] tablet:w-[40%] m-auto
+      <img class="rounded-full shadow-gray-950 shadow-2xl text-center max-w-[15rem] tablet:max-w-[25rem] m-auto
          " src="../lucas_icon.jpg" alt="">
       </div>
       <div class="ml-3 tablet:ml-5 tablet:col-start-1 tablet:row-span-1 justify-center">
       <p class="tablet:text-3xl text-xl text-zinc-700  font-light mt-[7rem] tablet:ml-[4.2rem] animate-flip-down animate-once animate-
       duration-[1000ms] animate-delay-[1000ms] animate-ease-out">
-        Hello there! I'm Lucas Gomez, a Junior Fullstack Developer with a strong desire to kickstart my professional journey in the world of software development. As an aspiring developer, I'm actively seeking my first opportunity to contribute my skills and creativity to a dynamic and forward-thinking team.
+        Hello there! I'm Lucas Gomez, a Junior Fullstack Developer <br> with a strong desire to kickstart my professional journey in the world of <br> software development. As an aspiring developer, I'm actively seeking my first opportunity to contribute my skills and creativity to a dynamic and forward-thinking team.
       </p>
       </div>
     </div>
@@ -174,11 +187,8 @@
      
  <div> <!--footer -->
   <footer>
-    <div class="bg-white mt-2 uppercase shadow-2xl font- font-extrabold text-3xl flex flex-col justify-center items-center tablet:justify-between tablet:flex-row">
-      
-      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#about">About Me</a>
-      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="./#projects">Projects</a>
-      <a class="text-zinc-500 hover:text-zinc-900 m-auto" href="#">Contact</a>
+    <div class="bg-white font-extrabold font-sans uppercase text-center">
+      <p style="text-align: center"> Copyright &copy; Lucas All Rights Reserved</p>
     </div>
 
     

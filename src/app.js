@@ -2,35 +2,54 @@
 window.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const mainSection = document.querySelector('main');
-    const aboutMeSection = document.getElementById('about');
 
     // Function to check if the sidebar should be hidden
     const handleScroll = () => {
-        if (window.scrollY > mainSection.offsetTop + mainSection.offsetHeight) {
-            sidebar.classList.add('translate-x-[-100%]');
-            sidebar.classList.add('transition-transform');
-        } else {
-            sidebar.classList.remove('translate-x-[-100%]');
-        }
+        const shouldHideSidebar = window.scrollY > 700;
+        sidebar.classList.toggle('translate-x-[-100%]', shouldHideSidebar);
+        sidebar.classList.add('transition-transform', shouldHideSidebar);
     };
 
     // Add the scroll event listener
     window.addEventListener('scroll', handleScroll);
+});
 
-    // Function to check if the bottom of the sidebar touches the top of the "About Me" section
-    const handleAboutMeSectionIntersection = (entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting && entry.boundingClientRect.bottom >= 0) {
-            sidebar.classList.add('translate-x-[-100%]');
+//scroll header change
+
+
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const headerDistance = window.scrollY > 175;
+    const body = document.querySelector('body');
+    if (screen.width < 768) {
+        if (headerDistance) {
+            header.classList.add('sticky');
+            header.classList.add('w-[100%]');
+            header.classList.add('left-0');
+            header.classList.add('top-0');
+            header.classList.add('overflow-hidden');
+            header.classList.add('z-10');
+            body.classList.add('pt-[175px]');
+        } else {
+            header.classList.remove('sticky');
+            header.classList.remove('w-[100%]');
+            header.classList.remove('left-0');
+            header.classList.remove('top-0');
+            header.classList.remove('overflow-hidden');
+            header.classList.remove('z-10');
+            body.classList.remove('pt-[175px]');
+
         }
-    };
-
-    // Add the Intersection Observer to watch the "About Me" section
-    const aboutMeObserver = new IntersectionObserver(handleAboutMeSectionIntersection, {
-        root: null, // Use the viewport as the root
-        rootMargin: '0px',
-        threshold: 0,
+    } else {
+        header.classList.remove('sticky');
+        header.classList.remove('w-[100%]');
+        header.classList.remove('left-0');
+        header.classList.remove('top-0');
+        header.classList.remove('overflow-hidden');
+        body.classList.remove('pt-[175px]');
+        body.classList.remove('z-10');
+    }
     });
 
-    aboutMeObserver.observe(aboutMeSection);
-});
+
