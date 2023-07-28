@@ -53,9 +53,11 @@ window.addEventListener('scroll', function () {
     });
 
 
-const botonDarkMode = document.querySelectorAll('.dark-mode-boton');
+const botonDarkMode = document.querySelector('.dark-mode-boton');
 botonDarkMode.addEventListener('click', function () {
     document.body.classList.toggle('dark');
 });
+
+
 
 
