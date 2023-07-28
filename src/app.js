@@ -24,7 +24,7 @@ window.addEventListener('scroll', function () {
     const body = document.querySelector('body');
     if (screen.width < 768) {
         if (headerDistance) {
-            header.classList.add('sticky');
+            header.classList.add('fixed');
             header.classList.add('w-[100%]');
             header.classList.add('left-0');
             header.classList.add('top-0');
@@ -32,7 +32,7 @@ window.addEventListener('scroll', function () {
             header.classList.add('z-10');
             body.classList.add('pt-[175px]');
         } else {
-            header.classList.remove('sticky');
+            header.classList.remove('fixed');
             header.classList.remove('w-[100%]');
             header.classList.remove('left-0');
             header.classList.remove('top-0');
@@ -42,7 +42,7 @@ window.addEventListener('scroll', function () {
 
         }
     } else {
-        header.classList.remove('sticky');
+        header.classList.remove('fixed');
         header.classList.remove('w-[100%]');
         header.classList.remove('left-0');
         header.classList.remove('top-0');
@@ -51,5 +51,11 @@ window.addEventListener('scroll', function () {
         body.classList.remove('z-10');
     }
     });
+
+
+const botonDarkMode = document.querySelector('.dark-mode-boton');
+botonDarkMode.addEventListener('click', function () {
+    document.body.classList.toggle('dark');
+});
 
 

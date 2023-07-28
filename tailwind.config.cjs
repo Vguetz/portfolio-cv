@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	darkMode: 'class',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		screens: {
@@ -23,8 +24,10 @@ module.exports = {
 		},
 		sidebarhidden: {
 			'transform': 'translateX(-100 %)',
-			'transition': 'transform 0.5s ease - out'
-		},		
+			'transition': 'transform 0.5s ease-out'
+		},
+
+
 		extend: {},
 	},
 	plugins: [require('tailwindcss-animated')],
