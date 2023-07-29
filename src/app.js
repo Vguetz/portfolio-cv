@@ -47,3 +47,20 @@ const botonDarkMode = document.querySelector('.dark-mode-boton');
 botonDarkMode.addEventListener('click', function () {
     document.body.classList.toggle('dark');
 });
+
+
+//scroll header change
+
+// JavaScript
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('nav');
+
+    // Function to toggle the menu visibility
+    function toggleMenu() {
+        menu.classList.toggle('hidden');
+    }
+
+    // Add click event listener to the hamburger icon
+    hamburger.addEventListener('click', toggleMenu);
+});
