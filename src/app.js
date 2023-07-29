@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
             header.classList.add('left-0');
             header.classList.add('top-0');
             header.classList.add('z-10');
-            body.classList.add('tablet:pt-[95.28px]');
+            body.classList.add('tablet:pt-[103.28px]');
             body.classList.add('pt-[67.28px]');
         } else {
             header.classList.remove('fixed');
@@ -64,3 +64,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add click event listener to the hamburger icon
     hamburger.addEventListener('click', toggleMenu);
 });
+
