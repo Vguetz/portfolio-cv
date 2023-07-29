@@ -29,8 +29,8 @@ window.addEventListener('scroll', function () {
             header.classList.add('left-0');
             header.classList.add('top-0');
             header.classList.add('z-10');
-            body.classList.add('tablet:pt-[140px]');
-            body.classList.add('pt-[175px]');
+            body.classList.add('tablet:pt-[95.28px]');
+            body.classList.add('pt-[67.28px]');
         } else {
             header.classList.remove('fixed');
             header.classList.remove('w-[100%]');
